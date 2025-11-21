@@ -9,3 +9,15 @@ step2 : to Enable Routing to react application we use React-router library and w
 
 step3: import all the components (Home,about contact..) into the app component 
 step4: import Routes and Route component from react-router-dom
+
+
+
+{
+    id:
+    title: 
+    features 
+    rating: 
+    description
+    accur:
+    category
+}
