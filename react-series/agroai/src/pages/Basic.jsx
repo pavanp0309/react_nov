@@ -1,10 +1,16 @@
 import React from 'react'
+import Card from '../components/ui/Card'
+import { BasicData } from '../data/Features'
 
 const Basic = () => {
   return (
-    <div className='bg-info p-5 border shadow'>
-       <p>Basic</p>
-    </div>
+    <section className='container p-5'>
+       <div className="row gy-3 ">
+        {
+          BasicData.map((features)=><Card {...features}/>)
+        }
+       </div>
+    </section>
   )
 }
 

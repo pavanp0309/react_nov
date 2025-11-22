@@ -11,6 +11,7 @@ import NavBar from './components/NavBar'
 import Basic from './pages/Basic'
 import Advanced from './pages/Advanced'
 import Premium from './pages/Premium'
+import FeatureDetails from './pages/FeatureDetails'
 // import the Routes and Route component to develope the url structure
 import { Routes,Route } from 'react-router-dom'
 
@@ -26,7 +27,9 @@ const App = () => {
       {/* Nested Routing */}
       <Route path='/feature' element={<Features/>}>
           <Route index element={<Basic/>}/>
+          {/* dynamic Routing */}
           <Route path='basic' element={<Basic/>}/>
+          <Route path='basic/:fid' element={<FeatureDetails/>}/>
           <Route path='premium' element={<Premium/>}/>
           <Route path='advanced' element={<Advanced/>}/>
       </Route>

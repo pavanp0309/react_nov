@@ -1,0 +1,98 @@
+export let BasicData = [
+  {
+    id: "1",
+    title: "VisionAI",
+    features: "Image recognition, object detection",
+    rating: "4.5",
+    description:
+      "An AI model specialized in identifying objects and patterns in images.",
+    accuracy: "92%",
+    category: "Computer Vision",
+  },
+  {
+    id: "2",
+    title: "ChatSense",
+    features: "Text generation, conversational replies",
+    rating: "4.7",
+    description:
+      "A conversational AI for answering questions and generating human-like text.",
+    accuracy: "95%",
+    category: "NLP",
+  },
+  {
+    id: "3",
+    title: "PredictPro",
+    features: "Trend prediction, data forecasting",
+    rating: "4.3",
+    description: "AI tool designed to analyze data and predict future trends.",
+    accuracy: "90%",
+    category: "Analytics",
+  },
+  {
+    id: "4",
+    title: "TranslateX",
+    features: "Multilingual translation, language detection",
+    rating: "4.6",
+    description:
+      "AI that translates text between multiple languages in real time.",
+    accuracy: "93%",
+    category: "Language",
+  },
+  {
+    id: "5",
+    title: "VoiceMate",
+    features: "Voice recognition, speech-to-text",
+    rating: "4.4",
+    description: "An AI capable of accurately converting speech into text.",
+    accuracy: "91%",
+    category: "Speech",
+  },
+  {
+    id: "6",
+    title: "SecureGuard",
+    features: "Threat detection, anomaly monitoring",
+    rating: "4.2",
+    description: "AI system that detects suspicious activities and breaches.",
+    accuracy: "89%",
+    category: "Cybersecurity",
+  },
+  {
+    id: "7",
+    title: "RecommenderX",
+    features: "Product suggestions, user profiling",
+    rating: "4.5",
+    description: "AI recommendation engine for e-commerce and media platforms.",
+    accuracy: "94%",
+    category: "Recommendation",
+  },
+  {
+    id: "8",
+    title: "AutoDriveAI",
+    features: "Lane detection, obstacle avoidance",
+    rating: "4.1",
+    description: "AI software used in self-driving vehicles for navigation.",
+    accuracy: "88%",
+    category: "Autonomous Systems",
+  },
+  {
+    id: "9",
+    title: "HealthScan",
+    features: "X-ray analysis, symptom checking",
+    rating: "4.6",
+    description:
+      "Medical AI helping doctors diagnose diseases using scan reports.",
+    accuracy: "96%",
+    category: "Healthcare",
+  },
+  {
+    id: "10",
+    title: "CodeGenX",
+    features: "Code completion, bug detection",
+    rating: "4.8",
+    description:
+      "AI assistant for developers that suggests and writes code snippets.",
+    accuracy: "97%",
+    category: "Developer Tools",
+  },
+];
+
