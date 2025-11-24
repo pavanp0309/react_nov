@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Features = () => {
   return (
-    <div className='row'>
+    <div className='container'>
       {/* nav section start */}
       <ul class="nav nav-pills p-2 border justify-content-center my-3 w-50 mx-auto">
         <li class="nav-item">

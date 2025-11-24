@@ -5,6 +5,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
 import Features from './pages/Features'
+import Shop from './pages/Shop'
 import PageNotFound from './pages/PageNotFound'
 import NavBar from './components/NavBar'
 // nested page compoment
@@ -24,14 +25,18 @@ const App = () => {
       <Route path='/about' element={<About/>}/> {/* helps in developing url path and helps to render the component of that path*/}
       <Route path='/contact' element={<Contact/>}/> {/* helps in developing url path and helps to render the component of that path*/}
       <Route path='/services' element={<Services/>}/> {/* helps in developing url path and helps to render the component of that path*/}
+      <Route path='/shop' element={<Shop/>}/>
       {/* Nested Routing */}
       <Route path='/feature' element={<Features/>}>
           <Route index element={<Basic/>}/>
           {/* dynamic Routing */}
           <Route path='basic' element={<Basic/>}/>
           <Route path='basic/:fid' element={<FeatureDetails/>}/>
-          <Route path='premium' element={<Premium/>}/>
-          <Route path='advanced' element={<Advanced/>}/>
+          <Route path="premium" element={<Premium />} />
+          <Route path="premium/:fid" element={<FeatureDetails />} />
+
+          <Route path="advanced" element={<Advanced />} />
+          <Route path="advanced/:fid" element={<FeatureDetails />} />
       </Route>
       {/* error handling in react routing */}
       <Route path='*' element={<PageNotFound/>}/> 

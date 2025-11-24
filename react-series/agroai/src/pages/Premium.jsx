@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Card from '../components/ui/Card';
+import { PremiumData } from '../data/Features';
 
-const Premium = () => {
+export default function Premium() {
   return (
-    <div className='bg-success p-5 border shadow'>
-      <p>Premium</p>
-    </div>
-  )
+    <section className='container p-5'>
+       <div className="row gy-3 ">
+        {
+         PremiumData.map((features)=><Card {...features}/>)
+        }
+       </div>
+    </section>
+  );
 }
-
-export default Premium

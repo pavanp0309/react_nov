@@ -1,11 +1,17 @@
-import React from 'react'
 
-const Advanced = () => {
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Card from '../components/ui/Card';
+import { AdvancedData } from '../data/Features';
+
+export default function Advanced() {
   return (
-    <div className='bg-warning p-5 border shadow'>
-      <p>Advanced</p>
-    </div>
-  )
+    <section className='container p-5'>
+       <div className="row gy-3 ">
+        {
+          AdvancedData.map((features)=><Card {...features}/>)
+        }
+       </div>
+    </section>
+  );
 }
-
-export default Advanced
