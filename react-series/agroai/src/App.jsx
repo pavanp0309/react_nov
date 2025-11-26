@@ -1,26 +1,29 @@
-import React from 'react'
+import React, { Suspense } from 'react'
+
 // importing the Pages 
-import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Services from './pages/Services'
-import Features from './pages/Features'
-import Shop from './pages/Shop'
-import PageNotFound from './pages/PageNotFound'
+let Home=React.lazy(()=>import("./pages/Home"))
+let About =React.lazy(()=>import("./pages/About"))
+let Contact =React.lazy(()=>import("./pages/Contact"))
+let Services =React.lazy(()=>import("./pages/Services"))
+let Features =React.lazy(()=>import("./pages/Features"))
+let Shop =React.lazy(()=>import("./pages/Shop"))
+let PageNotFound =React.lazy(()=>import("./pages/PageNotFound"))
+let Basic =React.lazy(()=>import("./pages/Basic"))
+let Advanced =React.lazy(()=>import("./pages/Advanced"))
+let FeatureDetails =React.lazy(()=>import("./pages/FeatureDetails"))
+let Premium =React.lazy(()=>import("./pages/Premium"))
 import NavBar from './components/NavBar'
-// nested page compoment
-import Basic from './pages/Basic'
-import Advanced from './pages/Advanced'
-import Premium from './pages/Premium'
-import FeatureDetails from './pages/FeatureDetails'
+
 // import the Routes and Route component to develope the url structure
-import { Routes,Route } from 'react-router-dom'
+import { Routes,Route, BrowserRouter } from 'react-router-dom'
 
 const App = () => {
   return (
     <>
+    <BrowserRouter>
     <NavBar/>
-    <Routes> {/* decides what  page to render in the Browser at initial load */}
+<Suspense fallback={<span>loading...</span>}>
+      <Routes> {/* decides what  page to render in the Browser at initial load */}
       <Route path='/' element={<Home/>}/> {/* helps in developing url path and helps to render the component of that path*/}
       <Route path='/about' element={<About/>}/> {/* helps in developing url path and helps to render the component of that path*/}
       <Route path='/contact' element={<Contact/>}/> {/* helps in developing url path and helps to render the component of that path*/}
@@ -41,6 +44,8 @@ const App = () => {
       {/* error handling in react routing */}
       <Route path='*' element={<PageNotFound/>}/> 
     </Routes>
+</Suspense>
+</BrowserRouter>
       
     </>
   )

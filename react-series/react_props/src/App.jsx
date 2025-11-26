@@ -1,10 +1,12 @@
 import React from 'react'
-import ProductList from './ProductList'
+import ProductList from './ProductList' 
+import FreshList from './FreshList'
 
 const App = () => {
   return (
     <div>
-    <ProductList/>
+    {/* <ProductList/> */}
+    <FreshList/>
     </div>
   )
 }
