@@ -1,0 +1,28 @@
+
+## useEffect: is used for Handling the sideEffects in a functional Components
+
+sideEffects:something that is happing outside of react Component 
+   Fetching the Data from an API ( fetch->Req-load-ui)
+   updating the Dom 
+   Running the Timer (setTimeOut,setInterval)
+   scrolling resizing the browser etc..
+
+
+LIFECYCLE METHODS OF FUNCTIONAL COMPONENT 
+
+1.MOUNTING:converting jsx-html-adding to dom
+2.UPDATION
+3.UNMOUNTING
+  
+
+syntax 
+
+useEffect(()=>{
+    // MOUNTING : componentDidMount()
+ react ()=>{} // UNMOUNTING componentDidUnMount()
+
+},[dependency]) // UPDATION componentDidUpdate()
+
+1.Render
+1.Re-Render 
+
